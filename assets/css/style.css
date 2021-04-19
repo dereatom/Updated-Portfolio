@@ -26,6 +26,8 @@
 }
 .header div {
     background-color: #372b7d;
+    height: 100px;
+   padding-top: 10px;
 }
 .header {
     display: flex;
@@ -44,6 +46,7 @@ h1 {
     color: wheat;
     font-family:Roboto;
     margin-left: 40px;
+    padding-top: 18px;
 
 
 }
@@ -58,7 +61,8 @@ h1 {
 }
 
 .img-main {
-    padding-left: 100px;  
+    padding-left: 100px;
+    flex-direction: column;  
 }
 .home .max-width {
     margin: auto 0 auto 40px;
@@ -71,11 +75,12 @@ h1 {
     padding-left: 20px;
 }
 .home .home-content .text-2 {
-    font-size: 68px;
+    font-size: 70px;
     font-weight: 600;
     margin: -3px;
-    font-family: Roboto, ubuntu;
+    font-family:Roboto;
     padding-left: 20px;
+    flex-direction: column;
 }
 .home .home-content .text-3{
     font-size: 35px;
@@ -191,6 +196,13 @@ h5 {
 }
 
 
-
+@media screen and (max-width: 768px) {
+    .home,
+    .row,
+    .header{
+      flex-direction: column;
+  }
+  }
+  
 
 
